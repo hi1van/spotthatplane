@@ -28,7 +28,10 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "homepage": "https://hi1van.github.io/spotthatplane",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "@gradio/client": "^1.11.0"
+    "@gradio/client": "^1.11.0",
+    "gh-pages": "^6.3.0"
   }
 }
