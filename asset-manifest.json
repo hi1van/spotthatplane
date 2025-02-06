@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/spotthatplane/static/css/main.fe245170.css",
-    "main.js": "/spotthatplane/static/js/main.bab81966.js",
+    "main.js": "/spotthatplane/static/js/main.7a49b989.js",
     "static/js/584.63bbc3b2.chunk.js": "/spotthatplane/static/js/584.63bbc3b2.chunk.js",
     "static/js/316.53d00b8c.chunk.js": "/spotthatplane/static/js/316.53d00b8c.chunk.js",
     "static/js/721.e603f8c2.chunk.js": "/spotthatplane/static/js/721.e603f8c2.chunk.js",
@@ -9,13 +9,13 @@
     "static/js/152.93b03360.chunk.js": "/spotthatplane/static/js/152.93b03360.chunk.js",
     "index.html": "/spotthatplane/index.html",
     "main.fe245170.css.map": "/spotthatplane/static/css/main.fe245170.css.map",
-    "main.bab81966.js.map": "/spotthatplane/static/js/main.bab81966.js.map",
+    "main.7a49b989.js.map": "/spotthatplane/static/js/main.7a49b989.js.map",
     "316.53d00b8c.chunk.js.map": "/spotthatplane/static/js/316.53d00b8c.chunk.js.map",
     "488.46d5e361.chunk.js.map": "/spotthatplane/static/js/488.46d5e361.chunk.js.map",
     "152.93b03360.chunk.js.map": "/spotthatplane/static/js/152.93b03360.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe245170.css",
-    "static/js/main.bab81966.js"
+    "static/js/main.7a49b989.js"
   ]
 }
