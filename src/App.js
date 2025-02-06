@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Client } from '@gradio/client';
 import './App.css';
 
@@ -7,7 +6,7 @@ function App() {
     <div className="App">
       <div className="columns">
         <div className='column'>
-          <img src="/images/logo.jpg" alt="logo" />
+          <img id="logo" src="/logo.png" alt="logo"/>
         </div>
         <div className='column'>
           <h1>Spot that Plane</h1>
