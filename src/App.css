@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+html {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  min-height: 100%;
+  background-color: #F0FBFF;
   display: flex;
   flex-direction: column;
+}
+
+.App {
+  flex-grow: 1;
+  padding: 5%;
+}
+
+img#logo {
+  width: 100px;
+  height: auto;
+  margin-right: 30px;
+}
+
+h1.title {
+  font-family: "Bungee Shade", sans-serif;
+  color: #4B4B4B;
+  font-size: 60px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
