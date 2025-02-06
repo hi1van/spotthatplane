@@ -4,9 +4,9 @@
 Your personal plane-spotting assistant.
 
 ## Links:
-Live website: https://hi1van.github.io/spotthatplane
-Gradio app hosted on Hugging Face: https://huggingface.co/spaces/ivanczhuang/SpotThatPlane
-Kaggle Jupyter Notebook on model training: https://www.kaggle.com/code/ivanczhuang/spotthatplane
+Live website: https://hi1van.github.io/spotthatplane \
+Gradio app hosted on Hugging Face: https://huggingface.co/spaces/ivanczhuang/SpotThatPlane \
+Kaggle Jupyter Notebook on model training: https://www.kaggle.com/code/ivanczhuang/spotthatplane \
 GitHub repo for the Gradio app powered the model: https://github.com/hi1van/SpotThatPlaneGradio
 
 ## Project Background
