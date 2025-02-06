@@ -46,6 +46,12 @@ function App() {
     setLoading(false);
   };
 
+  const handleClear = () => {
+    setImage(null);
+    setImageURL(null);
+    setResult(null);
+  };
+
 
   return (
     <div className="App">
@@ -59,29 +65,50 @@ function App() {
       </div>
 
       <div className='columns'>
-        <div className='column'>
+        <div className='column is-narrow'>
           <div className='panel-padding'>
             <div className='panel'>
-              <h2>Allow me to classify your picture of a plane.</h2>
-              <p>Upload your photo below</p>
+              <h2 className='subheading'>Allow me to classify your picture of a plane.</h2>
+              <p className='page-text' style={{ "marginTop": "15px" }}>
+                Note: only the following aircraft types are supported by the model <br />
+                Airbus A220, Airbus A320, Airbus A330, 
+                Airbus A340, Airbus A350, Airbus A380, Concorde.
+              </p>
+              <p className='page-text' style={{ "marginTop": "15px" }}>Upload your photo below:</p>
             </div>
           </div>
         </div>
       </div>
 
+      <div className='columns'>
+        <div className='column' style={{display: 'flex'}}>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="file-input" className="button" style={{ "marginRight": "15px" }}>
+              Choose Image
+            </label>
+            <input id="file-input" type="file" onChange={handleImageChange} style={{ display: 'none' }}/>
+            <button className="button" type="submit" style={{ "marginRight": "15px" }}>Analyse Image</button>
+          </form>
+          {image && <button className='button' onClick={handleClear}>Clear</button>}
+          {loading && <div id="loading-indicator" class="spinner"></div>}
+        </div>
+      </div>
+
       <div className="columns">
-        
-        <form onSubmit={handleSubmit}>
-          <input type="file" onChange={handleImageChange} />
-          <button className="button" type="submit">Analyse Image</button>
-        </form>
-        {imageURL && <img src={imageURL}/>}
-        {loading && <p>Loading...</p>}
-        {result && (
-          <div>
-            <h2>Result: {result[0].label}</h2>
+        <div className='column is-narrow'>
+          {imageURL && <img src={imageURL} style={{ "maxWidth": "40vw", "height": "auto" }}/>}
+        </div>
+        <div className='column is-narrow'>
+          <div className='panel-padding'>
+            <div className='panel'>
+              {result && (
+                <h2 className='subheading'>
+                  Result: {result[0].label} with {Math.round(result[0].confidences[0].confidence * 100)}% confidence
+                </h2>
+              )}
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
