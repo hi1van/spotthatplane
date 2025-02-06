@@ -110,6 +110,27 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className="columns">
+        <div className='column is-9'>
+          <div className='panel-padding'>
+            <div className='panel'>
+                <h2 className='subheading'>About this site</h2>
+                <p className='page-text' style={{ "marginTop": "10px" }}>
+                  As your very own plane-spotting assistant, the model which powers this site will help you 
+                  classify the model of a plane out of a given selection. <br /><br />
+
+                  Harnessing PyTorch and fast.ai, a deep learning model was trained on a data set of almost 3000 
+                  images of aircraft in the selection. After training, an error-rate of ~11% was achieved, accurate
+                  enough for the purposes of this website and my experiment. <br /><br />
+
+                  View the process of training the model and some insights on Kaggle&nbsp; 
+                  <a href="https://www.kaggle.com/code/ivanczhuang/spotthatplane" target="_blank">here</a>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
