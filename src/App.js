@@ -57,7 +57,7 @@ function App() {
     <div className="App">
       <div className="columns">
         <div className='column is-narrow'>
-          <img id="logo" src="%PUBLIC_URL%/logo.png" alt="logo"/>
+          <img id="logo" src="./logo.png" alt="logo"/>
         </div>
         <div className='column'>
           <h1 className='title'>Spot that Plane</h1>
