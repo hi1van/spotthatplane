@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+<img width="200" alt="image" src="https://github.com/hi1van/spotthatplane/blob/main/public/logo.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Spot that Plane
+Your personal plane-spotting assistant.
 
-## Available Scripts
+## Links:
+Live website: https://hi1van.github.io/spotthatplane
+Gradio app hosted on Hugging Face: https://huggingface.co/spaces/ivanczhuang/SpotThatPlane
+Kaggle Jupyter Notebook on model training: https://www.kaggle.com/code/ivanczhuang/spotthatplane
+GitHub repo for the Gradio app powered the model: https://github.com/hi1van/SpotThatPlaneGradio
 
-In the project directory, you can run:
+## Project Background
+Combining two interests of mine, deep learning models and plane-spotting, Spot that Plane is 
+an assistant of sorts, helping you classify a model of aircraft you may be unsure about out of a given selection.
 
-### `npm start`
+Harnessing PyTorch and fast.ai, a deep learning model was trained on a data set of almost 3000 
+images of aircraft in the selection. After training, an error-rate of ~11% was achieved, accurate
+enough for the purposes of this website and my experiment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can view the process of training the model and some insights in the Kaggle link.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tools
+- **Frontend**: React, Bulma
+- **Backend**: Gradio app hosted on Hugging Face
+- **Hosting**: GitHub Pages (for frontend), Hugging Face Spaces (for backend)
+- **Model Training**: PyTorch, fast.ai
+- **UI/UX Design**: Figma
+- **Other**: Hugging Face @gradio/client for API calls, Kaggle for model training and insights
