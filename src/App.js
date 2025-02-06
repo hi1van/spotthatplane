@@ -72,7 +72,7 @@ function App() {
               <p className='page-text' style={{ "marginTop": "15px" }}>
                 Note: only the following aircraft types are supported by the model <br />
                 Airbus A220, Airbus A320, Airbus A330, 
-                Airbus A340, Airbus A350, Airbus A380, Concorde.
+                Airbus A340, Airbus A350, Airbus A380, and Concorde.
               </p>
               <p className='page-text' style={{ "marginTop": "15px" }}>Upload your photo below:</p>
             </div>
@@ -102,9 +102,9 @@ function App() {
           <div className='panel-padding'>
             <div className='panel'>
               {result && (
-                <h2 className='subheading'>
+                <p className='page-text'>
                   Result: {result[0].label} with {Math.round(result[0].confidences[0].confidence * 100)}% confidence
-                </h2>
+                </p>
               )}
             </div>
           </div>
