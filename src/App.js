@@ -74,7 +74,9 @@ function App() {
                 Airbus A220, Airbus A320, Airbus A330, 
                 Airbus A340, Airbus A350, Airbus A380, and Concorde.
               </p>
-              <p className='page-text' style={{ "marginTop": "15px" }}>Upload your photo below:</p>
+              <p className='page-text' style={{ "marginTop": "15px" }}>
+                Upload your photo below - ensure the aircraft is clear in frame:
+              </p>
             </div>
           </div>
         </div>
@@ -121,8 +123,8 @@ function App() {
                   classify the model of a plane out of a given selection.<br /><br />
 
                   Harnessing PyTorch and fast.ai, a deep learning model was trained on a data set of almost 3000 
-                  images of aircraft in the selection. After training, an error-rate of ~11% was achieved, accurate
-                  enough for the purposes of this website and my experiment.<br /><br />
+                  images of aircraft in the selection. After training, an error-rate of ~11% was achieved. However,
+                  the model struggles with images of planes which are obstructed, cropped or small in the frame.<br /><br />
 
                   View the process of training the model and some insights on Kaggle&nbsp; 
                   <a href="https://www.kaggle.com/code/ivanczhuang/spotthatplane" target="_blank">here</a>
